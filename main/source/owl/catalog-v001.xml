@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/tyt/ont/swrl/mywork" uri="file:/C:/Users/TYT/Desktop/swrl%20test/mywork.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2003/11/swrl" uri="file:/C:/Users/TYT/Desktop/swrl%20test/swrl.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline" uri="PipeLine-rdf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/DL" uri="DLonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/DX" uri="DXonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/GY" uri="GYonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/JS" uri="JSonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/PS" uri="PSonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/RL" uri="RLonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="duplicate:http://www.semanticweb.org/tyt/ontologies/RQ" uri="DL0512%20-%20副本.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="duplicate:http://www.semanticweb.org/tyt/ontologies/RQ" uri="RQ.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="duplicate:http://www.semanticweb.org/tyt/ontologies/RQ" uri="RQ0512.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.semanticweb.org/tyt/ontologies/ZHGL" uri="ZHGLonto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463021900415" name="http://www.w3.org/2002/07/owl#" uri="PipeLine.owl"/>
+    </group>
+</catalog>

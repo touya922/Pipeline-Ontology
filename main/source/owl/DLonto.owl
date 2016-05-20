@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tyt/ontologies/DL"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/tyt/ontologies/DL">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#DL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dianche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gongdian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipeLineHigh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipeLineLow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipeLineMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointBiandiansuo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointBiandianzhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointBianyaqi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointDianlanzhongduanta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointDianligou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointDianxiangan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointDideng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointDixiajingshi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointFeipucha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointFenzhidian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointGangguangan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointGaogaopai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointGoucao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointHuanwanggui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointJianxiujing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointJiaotongxinhaodeng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointJiexianxiang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointJingbiandian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointJingneidian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointKaiguanqi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointKongzhigui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointLudeng"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointLudengkongzhixiang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointPeidianshi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointRenkongjing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointRuhu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointShanggan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointShoukongjing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointTieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointTongfengjing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointWantou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointXiangan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointXiangshikaiguanzhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointYibanguanxiandian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointYuliukou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongdianPipePointZhuanzhedian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guanggao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QitaDL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xinhao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zhaoming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zhiliu"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Dianche"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gongdian"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipeLine"/>
+        <Class IRI="#Gongdian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipeLineHigh"/>
+        <Class IRI="#GongdianPipeLine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipeLineLow"/>
+        <Class IRI="#GongdianPipeLine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipeLineMedium"/>
+        <Class IRI="#GongdianPipeLine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePoint"/>
+        <Class IRI="#Gongdian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointBiandiansuo"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointBiandianzhan"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointBianyaqi"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointDianlanzhongduanta"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointDianligou"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointDianxiangan"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointDideng"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointDixiajingshi"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointFeipucha"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointFenzhidian"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointGangguangan"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointGaogaopai"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointGoucao"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointHuanwanggui"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointJianxiujing"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointJiaotongxinhaodeng"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointJiexianxiang"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointJingbiandian"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointJingneidian"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointKaiguanqi"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointKongzhigui"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointLudeng"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointLudengkongzhixiang"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointPeidianshi"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointRenkongjing"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointRuhu"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointShanggan"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointShoukongjing"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointTieta"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointTongfengjing"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointWantou"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointXiangan"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointXiangshikaiguanzhan"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointYibanguanxiandian"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointYuliukou"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongdianPipePointZhuanzhedian"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guanggao"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QitaDL"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xinhao"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zhaoming"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zhiliu"/>
+        <Class IRI="#DL"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Dianche"/>
+        <Class IRI="#Gongdian"/>
+        <Class IRI="#Guanggao"/>
+        <Class IRI="#QitaDL"/>
+        <Class IRI="#Xinhao"/>
+        <Class IRI="#Zhaoming"/>
+        <Class IRI="#Zhiliu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GongdianPipeLine"/>
+        <Class IRI="#GongdianPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GongdianPipeLineHigh"/>
+        <Class IRI="#GongdianPipeLineLow"/>
+        <Class IRI="#GongdianPipeLineMedium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GongdianPipePointBiandiansuo"/>
+        <Class IRI="#GongdianPipePointBiandianzhan"/>
+        <Class IRI="#GongdianPipePointBianyaqi"/>
+        <Class IRI="#GongdianPipePointDianlanzhongduanta"/>
+        <Class IRI="#GongdianPipePointDianligou"/>
+        <Class IRI="#GongdianPipePointDianxiangan"/>
+        <Class IRI="#GongdianPipePointDideng"/>
+        <Class IRI="#GongdianPipePointDixiajingshi"/>
+        <Class IRI="#GongdianPipePointFeipucha"/>
+        <Class IRI="#GongdianPipePointFenzhidian"/>
+        <Class IRI="#GongdianPipePointGangguangan"/>
+        <Class IRI="#GongdianPipePointGaogaopai"/>
+        <Class IRI="#GongdianPipePointGoucao"/>
+        <Class IRI="#GongdianPipePointHuanwanggui"/>
+        <Class IRI="#GongdianPipePointJianxiujing"/>
+        <Class IRI="#GongdianPipePointJiaotongxinhaodeng"/>
+        <Class IRI="#GongdianPipePointJiexianxiang"/>
+        <Class IRI="#GongdianPipePointJingbiandian"/>
+        <Class IRI="#GongdianPipePointJingneidian"/>
+        <Class IRI="#GongdianPipePointKaiguanqi"/>
+        <Class IRI="#GongdianPipePointKongzhigui"/>
+        <Class IRI="#GongdianPipePointLudeng"/>
+        <Class IRI="#GongdianPipePointLudengkongzhixiang"/>
+        <Class IRI="#GongdianPipePointPeidianshi"/>
+        <Class IRI="#GongdianPipePointRenkongjing"/>
+        <Class IRI="#GongdianPipePointRuhu"/>
+        <Class IRI="#GongdianPipePointShanggan"/>
+        <Class IRI="#GongdianPipePointShoukongjing"/>
+        <Class IRI="#GongdianPipePointTieta"/>
+        <Class IRI="#GongdianPipePointTongfengjing"/>
+        <Class IRI="#GongdianPipePointWantou"/>
+        <Class IRI="#GongdianPipePointXiangan"/>
+        <Class IRI="#GongdianPipePointXiangshikaiguanzhan"/>
+        <Class IRI="#GongdianPipePointYibanguanxiandian"/>
+        <Class IRI="#GongdianPipePointYuliukou"/>
+        <Class IRI="#GongdianPipePointZhuanzhedian"/>
+    </DisjointClasses>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

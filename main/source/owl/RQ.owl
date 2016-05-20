@@ -1,0 +1,1485 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tyt/ontologies/RQ"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/tyt/ontologies/RQ">
+    <Prefix name="" IRI="http://www.semanticweb.org/tyt/ontologies/RQ#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AnQuanFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiLuFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BianJing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BianZhi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DanXiangFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DieFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Famen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FangSanGuan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FenLiuFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FenPeiFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeMoFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GongQiZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuanMo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JianYaFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JieDuanFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JieLiuFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JieZhiFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiGuan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiuLiangJi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meiqi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeiqiPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeiqiPipeLineHigh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeiqiPipeLineLow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeiqiPipeLineMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeiqiPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NiZhiFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NingShuiGang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaiQiFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QiuFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RQ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuHu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SanTong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShuShuiFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shuijing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiTong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQIZY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiFSW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiFuZhu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiSheBei"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiSheShi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiTZD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYBianCai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYBianjing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYBuChangQi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYCNGJiaQiZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYChenJiangXiang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYChuRuDiDian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYFaMen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYFaMenJing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYFeiTanCeQu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYGuanMo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJiLiangXiang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJiLiangZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJiXingBaoHu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJiaQiZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJianXiuJing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJieTou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYJueYuanJieTou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYLNGYingJiQiYuanZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYMenZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYNingShuiGang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYQiYuan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYRuHu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYSanTong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYSiTong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYTaoTong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYTiaoYaFang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYTiaoYaGui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYTiaoYaZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYWanTou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYXiShengYangJi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYXinXiQiu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYYinJiBaoHu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYYuLiuKou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYZhiXianDian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanQiZYZhuBeiZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanqiPipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanqiPipeline_High"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanqiPipeline_Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianRanqiPipeline_Middle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TianYaZhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tianranqi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TiaoJieFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WanTou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XiangFangShuang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XuanSaiFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yehuaqi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YuLiuKou"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZhaFa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZhiHuiFa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Disjoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCZ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConnectPipeline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeometry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FaMenAtt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_BZ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_DMGC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_GDMS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_MSND"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_NAME"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_SSDL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_TCRQ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_X"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_Y"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZHGD_YSBM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_DCRQ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_GJ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_GXCZ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_LX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_MSFS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_NAME"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_SJYL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_SZDL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_YLDJ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ZYGD_YXYL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#连通度"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BuXiuGang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeJinGang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LvHeJin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PVC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RQpipe001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RQpipe002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RQpipe003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RQpoint001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TanGang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZhuGang"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BiLuFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DanXiangFa"/>
+        <Class IRI="#ZhiHuiFa"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NiZhiFa"/>
+        <Class IRI="#ZhiHuiFa"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AnQuanFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiLuFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BianJing"/>
+        <Class IRI="#TianRanQiTZD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BianZhi"/>
+        <Class IRI="#TianRanQiTZD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DanXiangFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DieFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Famen"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FangSanGuan"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FenLiuFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FenPeiFa"/>
+        <Class IRI="#FenLiuFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeMoFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GongQiZhan"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuanMo"/>
+        <Class IRI="#TianRanQiTZD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuanMo"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#连通度"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JianYaFa"/>
+        <Class IRI="#TiaoJieFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JieDuanFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JieLiuFa"/>
+        <Class IRI="#TiaoJieFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JieZhiFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiGuan"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiuLiangJi"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meiqi"/>
+        <Class IRI="#RQ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeiqiPipeLine"/>
+        <Class IRI="#Meiqi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeiqiPipeLineHigh"/>
+        <Class IRI="#MeiqiPipeLine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeiqiPipeLineLow"/>
+        <Class IRI="#MeiqiPipeLine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeiqiPipeLineMedium"/>
+        <Class IRI="#MeiqiPipeLine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeiqiPipePoint"/>
+        <Class IRI="#Meiqi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NiZhiFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NingShuiGang"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaiQiFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QiuFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuHu"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SanTong"/>
+        <Class IRI="#TianRanQiTZD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SanTong"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty IRI="#连通度"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShuShuiFa"/>
+        <Class IRI="#FenLiuFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shuijing"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiTong"/>
+        <Class IRI="#TianRanQiTZD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQIZY"/>
+        <Class IRI="#TianRanQiPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiFSW"/>
+        <Class IRI="#TianRanQiZH"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiFuZhu"/>
+        <Class IRI="#TianRanQIZY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiPeiJian"/>
+        <Class IRI="#TianRanQIZY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiPipePoint"/>
+        <Class IRI="#Tianranqi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiSheBei"/>
+        <Class IRI="#TianRanQIZY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiSheShi"/>
+        <Class IRI="#TianRanQIZY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiTZD"/>
+        <Class IRI="#TianRanQiZH"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZH"/>
+        <Class IRI="#TianRanQiPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYBianCai"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYBianjing"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYBuChangQi"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYCNGJiaQiZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYChenJiangXiang"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYChuRuDiDian"/>
+        <Class IRI="#TianRanQiFuZhu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYFaMen"/>
+        <Class IRI="#TianRanQiSheBei"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYFaMenJing"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYFeiTanCeQu"/>
+        <Class IRI="#TianRanQiFuZhu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYGuanMo"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJiLiangXiang"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJiLiangZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJiXingBaoHu"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJiaQiZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJianXiuJing"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJieTou"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYJueYuanJieTou"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYLNGYingJiQiYuanZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYMenZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYNingShuiGang"/>
+        <Class IRI="#TianRanQiSheBei"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYQiYuan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYRuHu"/>
+        <Class IRI="#TianRanQiFuZhu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYSanTong"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYSiTong"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYTaoTong"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYTiaoYaFang"/>
+        <Class IRI="#TianRanQiSheBei"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYTiaoYaGui"/>
+        <Class IRI="#TianRanQiSheBei"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYTiaoYaZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYWanTou"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYXiShengYangJi"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYXinXiQiu"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYYinJiBaoHu"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYYuLiuKou"/>
+        <Class IRI="#TianRanQiFuZhu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYZhiXianDian"/>
+        <Class IRI="#TianRanQiFuZhu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanQiZYZhuBeiZhan"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanqiPipeline"/>
+        <Class IRI="#Tianranqi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanqiPipeline_High"/>
+        <Class IRI="#TianRanqiPipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanqiPipeline_Low"/>
+        <Class IRI="#TianRanqiPipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianRanqiPipeline_Middle"/>
+        <Class IRI="#TianRanqiPipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TianYaZhan"/>
+        <Class IRI="#MeiqiPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tianranqi"/>
+        <Class IRI="#RQ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TiaoJieFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WanTou"/>
+        <Class IRI="#TianRanQiTZD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XiangFangShuang"/>
+        <Class IRI="#MeiqiPipePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XuanSaiFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yehuaqi"/>
+        <Class IRI="#RQ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YuLiuKou"/>
+        <Class IRI="#TianRanQiFSW"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YuLiuKou"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#连通度"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZhaFa"/>
+        <Class IRI="#JieDuanFa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZhiHuiFa"/>
+        <Class IRI="#Famen"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Famen"/>
+        <Class IRI="#LiuLiangJi"/>
+        <Class IRI="#NingShuiGang"/>
+        <Class IRI="#TianYaZhan"/>
+        <Class IRI="#XiangFangShuang"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GuanMo"/>
+        <Class IRI="#SanTong"/>
+        <Class IRI="#YuLiuKou"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MeiqiPipeLineHigh"/>
+        <Class IRI="#MeiqiPipeLineLow"/>
+        <Class IRI="#MeiqiPipeLineMedium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TianRanQiFuZhu"/>
+        <Class IRI="#TianRanQiPeiJian"/>
+        <Class IRI="#TianRanQiSheBei"/>
+        <Class IRI="#TianRanQiSheShi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TianRanqiPipeline_High"/>
+        <Class IRI="#TianRanqiPipeline_Low"/>
+        <Class IRI="#TianRanqiPipeline_Middle"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#SanTong"/>
+        <NamedIndividual IRI="#RQpoint001"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Disjoint"/>
+        <NamedIndividual IRI="#RQpoint001"/>
+        <NamedIndividual IRI="#RQpipe001"/>
+    </ObjectPropertyAssertion>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#ZHGD_SSDL"/>
+        <DataProperty IRI="#ZYGD_SZDL"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#ZHGD_TCRQ"/>
+        <DataProperty IRI="#ZYGD_DCRQ"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_BZ"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_DMGC"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_GDMS"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_MSND"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_NAME"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_SSDL"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_TCRQ"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_X"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_Y"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZHGD_YSBM"/>
+        <DataProperty IRI="#ZHGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_DCRQ"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_GJ"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_GXCZ"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_LX"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_MSFS"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_NAME"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_SJYL"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_SZDL"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_YLDJ"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ZYGD_YXYL"/>
+        <DataProperty IRI="#ZYGDPROPS"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGDPROPS"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_BZ"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_DMGC"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_GDMS"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_MSND"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_NAME"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_SSDL"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_TCRQ"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_X"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_Y"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZHGD_YSBM"/>
+        <Class IRI="#TianRanQiZH"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_DCRQ"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_GJ"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_GXCZ"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_LX"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_MSFS"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_NAME"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_SJYL"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_SZDL"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_YLDJ"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ZYGD_YXYL"/>
+        <Class IRI="#TianRanQIZY"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#连通度"/>
+        <Class IRI="#SanTong"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#连通度"/>
+        <Class IRI="#TianRanQiZYSanTong"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#连通度"/>
+        <Class IRI="#TianRanQiZYSiTong"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#连通度"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;integer">1</Literal>
+            <Literal datatypeIRI="&xsd;integer">2</Literal>
+            <Literal datatypeIRI="&xsd;integer">3</Literal>
+            <Literal datatypeIRI="&xsd;integer">4</Literal>
+            <Literal datatypeIRI="&xsd;integer">5</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnQuanFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">安全阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiLuFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">闭路阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BianJing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">变径</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BianZhi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">变质</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DanXiangFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">单向阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DieFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">蝶阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FaMenAtt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">阀门属性</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Famen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">阀门</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Famen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">阀门</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FangSanGuan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">放散管</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FenLiuFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">分流阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FenPeiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">分配阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GeMoFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">隔膜阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GongQiZhan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">供气站</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GongQiZhan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">供气站</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GuanMo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">位于管线末端。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GuanMo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">管末</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JieDuanFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">截断阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JieLiuFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">节流阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JieZhiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">截止阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LiGuan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">立管</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LiuLiangJi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">流量计</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Meiqi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">煤气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meiqi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">煤气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeiqiPipeLine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">煤气管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeiqiPipePoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">煤气管点</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NiZhiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">逆止阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NingShuiGang</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">凝水缸</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PaiQiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">排气阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QiuFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">球阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RQ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">燃气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RQ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">燃气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RuHu</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">入户</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SanTong</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/tyt/ontologies/RQ#genid448950337805610"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SanTong</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">三通管件。主要用于改变流体方向，用在主管道要分支管处。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SanTong</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">三通</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShuShuiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">疏水阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shuijing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">水井</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SiTong</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">四通</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQIZY</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气专业</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiFSW</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气附属物</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiFuZhu</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">辅助</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiPeiJian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">配件</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiPipePoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气管点</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiSheBei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">设备</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiSheShi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">设施</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiTZD</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气特征点</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanQiZH</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气综合</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanqiPipeline</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanqiPipeline_High</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气高压管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanqiPipeline_Low</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气低压管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianRanqiPipeline_Middle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气中压管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TianYaZhan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">添压站</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tianranqi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tianranqi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">天然气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TiaoJieFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">调节阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WanTou</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">弯头</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XiangFangShuang</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">消防栓</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XuanSaiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">旋塞阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Yehuaqi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">液化气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Yehuaqi</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">液化气</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YuLiuKou</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">一般位于管线末端，作为预留管点等待使用</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#YuLiuKou</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">预留口</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_BZ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">备注</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_DMGC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">地面高程</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_GDMS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">管点埋深</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_MSND</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">埋设年代</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_NAME</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">管点名称</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_SSDL</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">所属道路</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_TCRQ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">探查日期</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_X</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">X坐标</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_Y</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Y坐标</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZHGD_YSBM</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">要素编码</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_DCRQ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">调查日期</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_GJ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">管径</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_GXCZ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">管线材质</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_LX</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">流向</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_MSFS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">埋设方式</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_NAME</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">管点名称</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_SJYL</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">设计压力</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_SZDL</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">所在道路</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_YLDJ</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">压力等级</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZYGD_YXYL</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">运行压力</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZhaFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">闸阀</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZhiHuiFa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">止回阀</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

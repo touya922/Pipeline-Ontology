@@ -1,0 +1,1093 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#"
+     xml:base="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline"
+     xmlns:pipeline="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mywork="http://www.semanticweb.org/tyt/ont/swrl/mywork#"
+     xmlns:buitin="http://www.semanticweb.org/tyt/ont/test"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tyt/ont/PipeLine"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLMinDepth_zhimai -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLMinDepth_zhimai">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MinDepth"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXMS"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>电力管线最小覆土深度_直埋</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MinDepth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MinDepth">
+        <rdfs:label>最小覆土深度</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiYongHangYe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiYongHangYe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuTie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+        <rdfs:label>适用行业</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#has_FTSD_SuitableDegrade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#has_FTSD_SuitableDegrade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#AbandonedTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#AbandonedTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Abandoned"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>废弃时间</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXMS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXMS">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Balanced</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Clever</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Energetic</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Lazy</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Talkative</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#StartFrom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#StartFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#InUse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>开始时间</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#asWKT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#asWKT">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#coordinateDimension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#coordinateDimension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLMinDepth_zhimai"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>电力管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>电信管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>工业管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>给水管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>排水管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>其他管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>热力管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>燃气管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>综合管沟（廊）</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Abandoned -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Abandoned">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT"/>
+        <rdfs:label>废弃</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#BoLiGang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#BoLiGang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>玻璃钢</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DLPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DXPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DXPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DXPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DXPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DXPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DiMian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DiMian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>地面</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DingGuan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DingGuan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>顶管（非开挖或定向钻）</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#EmptyPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#EmptyPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT"/>
+        <rdfs:label>空管</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiYongHangYe"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>管线材质</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GYPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GYPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#LineString"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GYPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GYPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GYPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Gang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Gang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>钢</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanGou -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanGou">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>管沟</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanKuai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanKuai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>管块</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanMai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanMai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>管埋</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuangQian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuangQian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>光纤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#HighlyRish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#HighlyRish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade"/>
+        <rdfs:label>高度风险</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#HighlySuitable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#HighlySuitable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade"/>
+        <rdfs:label>高度适宜</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#InUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#InUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT"/>
+        <rdfs:label>在用</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JiaKong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JiaKong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>架空</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JingNeiLianXian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JingNeiLianXian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>井内连线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JuLvYiXi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JuLvYiXi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>聚氯乙烯</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JuYiXi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JuYiXi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>聚乙烯</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#LineString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#LineString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT"/>
+        <rdfs:label>埋设方式</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PSPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PSPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PSPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PSPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PSPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Polygon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Polygon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeGeometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QTPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QTPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#LineString"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QTPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QTPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QTPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QiuMoZhuTie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QiuMoZhuTie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>球墨铸铁</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QuiteSuitable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QuiteSuitable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade"/>
+        <rdfs:label>较适宜</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RLPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RLPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RLPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RLPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RLPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RQPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RQPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#LineString"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RQPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RQPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RQPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RenFang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RenFang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>人防</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RenGongShi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RenGongShi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>砼</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT">
+        <rdfs:label>使用状态</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZTOthers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZTOthers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZT"/>
+        <rdfs:label>其他</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShangJia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShangJia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>上架</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Shi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Shi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>石</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiMian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiMian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>石棉</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShuiXia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShuiXia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>水下</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SomeRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SomeRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade"/>
+        <rdfs:label>有风险</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Suitable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Suitable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade"/>
+        <rdfs:label>适宜</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SuitableDegrade">
+        <rdfs:label>适宜度</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TaoCi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TaoCi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>陶瓷</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Tong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Tong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiYongHangYe"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>铜</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TongXinLvJiaoXian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TongXinLvJiaoXian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>铜芯铝绞线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#XiaoTongDao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#XiaoTongDao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>小通道</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeline"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipePoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipePoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#PipeFeature"/>
+        <rdfs:label>综合管线</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhiMai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhiMai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MSFS"/>
+        <rdfs:label>直埋</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuTie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuTie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>铸铁</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Zhuan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Zhuan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>砖</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuanShi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuanShi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GXCZ"/>
+        <rdfs:label>砖石</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZHPipeline"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DiMian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#DingGuan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanGou"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanKuai"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuanMai"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JiaKong"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JingNeiLianXian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RenFang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShangJia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShuiXia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#XiaoTongDao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhiMai"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Abandoned"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#EmptyPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#InUse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SYZTOthers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#BoLiGang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Gang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#GuangQian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JuLvYiXi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#JuYiXi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QiuMoZhuTie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#RenGongShi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Shi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ShiMian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TaoCi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Tong"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TongXinLvJiaoXian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuTie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Zhuan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#ZhuanShi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#HighlyRish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#HighlySuitable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#QuiteSuitable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#SomeRisk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Suitable"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#LineString"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Point"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#Polygon"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#MeiQiPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#YeHuaQiPipe"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#TianRanQiPipeLine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

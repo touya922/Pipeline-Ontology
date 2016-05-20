@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/tyt/ontologies/RQ#"
+     xml:base="http://www.semanticweb.org/tyt/ontologies/RQ"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#GasPressureGrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#GasPressureGrade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#RQ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#RQ"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#MeiQiIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#RQ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#RQ">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#RQ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_Middle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_Middle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_AnQuanFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_AnQuanFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BiLuFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BiLuFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BianCai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BianCai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BianJing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BianJing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ChuRuDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ChuRuDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DanXiangFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DanXiangFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiHuiFa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_NiZhiFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DieFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DieFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DuoTongDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DuoTongDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenLiuFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenLiuFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenPeiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenPeiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenLiuFa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ShuShuiFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_GeMoFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_GeMoFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_GuanMo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_GuanMo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JianXiuJing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JianXiuJing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JianYaFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JianYaFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoJieFa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieLiuFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieLiuFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieLiuFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoJieFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieZhiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieZhiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_NiZhiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_NiZhiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiHuiFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_NingShuiGang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_NingShuiGang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_PaiQiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_PaiQiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_PaiQiZhuangZhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_PaiQiZhuangZhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_QiuFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_QiuFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_SanTong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_SanTong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ShenSuoQi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ShenSuoQi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ShuShuiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ShuShuiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenLiuFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoJieFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoJieFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoYaQi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoYaQi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_XuanSaiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_XuanSaiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_YinJing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_YinJing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_YuLiuKou -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_YuLiuKou">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhaFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhaFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiHuiFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiHuiFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiXianDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiXianDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhuanZheDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhuanZheDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#RQ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/RQ#YeHuaQiIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_AnQuanFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BiLuFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FenLiuFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieDuanFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_PaiQiFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoJieFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiHuiFa"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DieFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_GeMoFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JieZhiFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_QiuFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_XuanSaiFa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhaFa"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BianCai"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_BianJing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ChuRuDian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_DuoTongDian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_FaMen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_GuanMo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_JianXiuJing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_NingShuiGang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_PaiQiZhuangZhi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_SanTong"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ShenSuoQi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_TiaoYaQi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_YinJing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_YuLiuKou"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhiXianDian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipepoint_ZhuanZheDian"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/RQ#TianRanQiPipeline_Middle"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

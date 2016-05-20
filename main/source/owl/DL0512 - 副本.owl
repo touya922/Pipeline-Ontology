@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/tyt/ontologies/DL#"
+     xml:base="http://www.semanticweb.org/tyt/ontologies/DL"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tyt/ontologies/DL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#DL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#DL">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#DianCheIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#DianCheIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DL"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#DianChePipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#DianChePipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DianCheIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DianChePipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#DianChePipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#DianChePipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DianCheIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#GongDianIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#GongDianIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DL"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#GongDianPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#GongDianPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GongDianIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GongDianPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#GongDianPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#GongDianPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GongDianIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#GuangGaoIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipePoint_WanTou -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipePoint_WanTou">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_Middle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_Middle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_BianCai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_BianCai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_BianJing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_BianJing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ChuRuDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ChuRuDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_DianLiGou -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_DianLiGou">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_DuoTongDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_DuoTongDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_FenZhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_FenZhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_GuanMo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_GuanMo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_JianXiuJing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_JianXiuJing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_NingShuiGang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_NingShuiGang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_PaiQiZhuangZhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_PaiQiZhuangZhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_SanTong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_SanTong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ShenSuoQi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ShenSuoQi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_TiaoYaQi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_TiaoYaQi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_YinJing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_YinJing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_YuLiuKou -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_YuLiuKou">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ZhiXianDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ZhiXianDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ZhuanZheDian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint_ZhuanZheDian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#XinHaoIndustry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoIndustry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#DL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#XinHaoPipeline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoPipeline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoIndustry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoPipepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tyt/ontologies/DL#XinHaoPipepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoPipepoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tyt/ontologies/DL#XinHaoIndustry"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tyt/ontologies/DL#LuDengPipeline_Middle"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

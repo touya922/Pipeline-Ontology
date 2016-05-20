@@ -1,0 +1,1147 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="pipeline" IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipeline#"/>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ZhuTie"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:DXPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:SomeRisk"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:InUse"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:QTPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:DingGuan"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:DiMian"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ZhiMai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pipeline:MinDepth"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GYPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:MeiQiPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:RQPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="pipeline:asWKT"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="pipeline:AbandonedTime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GuanGou"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:RenFang"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ShiMian"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GYPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:DLPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:MeiQiPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Tong"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:QTPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Gang"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:RLPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ZHPipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:EmptyPipe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pipeline:DLMinDepth_zhimai"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:SYZT"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:RLPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:PSPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="pipeline:StartFrom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:JuYiXi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Zhuan"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:JiaKong"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:JuLvYiXi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:QiuMoZhuTie"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:RQPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:HighlySuitable"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:LineString"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="pipeline:GXMS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:DLPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:SYZTOthers"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ShangJia"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ZHPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Abandoned"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ShuiXia"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:RenGongShi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Shi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:TongXinLvJiaoXian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pipeline:has_FTSD_SuitableDegrade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="pipeline:coordinateDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ZhuanShi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:QuiteSuitable"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:BoLiGang"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GuanMai"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:ZHPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:XiaoTongDao"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Polygon"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GuangQian"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Suitable"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:MeiQiPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:TaoCi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:PSPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:DXPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GuanKuai"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pipeline:ShiYongHangYe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:JingNeiLianXian"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:HighlyRish"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+        <ObjectMinCardinality cardinality="7">
+            <ObjectProperty abbreviatedIRI="pipeline:DLMinDepth_zhimai"/>
+            <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Abandoned"/>
+        <Class abbreviatedIRI="pipeline:SYZT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:BoLiGang"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:DLPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:DLPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:DXPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:DXPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:DiMian"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:DingGuan"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:EmptyPipe"/>
+        <Class abbreviatedIRI="pipeline:SYZT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:ShiYongHangYe"/>
+            <Class abbreviatedIRI="pipeline:PipeFeature"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GYPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GYPipeLine"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+            <Class abbreviatedIRI="pipeline:LineString"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GYPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GYPipePoint"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+            <Class abbreviatedIRI="pipeline:Point"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Gang"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GuanGou"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GuanKuai"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GuanMai"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:GuangQian"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:HighlyRish"/>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:HighlySuitable"/>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:InUse"/>
+        <Class abbreviatedIRI="pipeline:SYZT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:JiaKong"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:JingNeiLianXian"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:JuLvYiXi"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:JuYiXi"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:LineString"/>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+        <Class IRI="Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:MeiQiPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:MeiQiPipeLine"/>
+        <Class abbreviatedIRI="pipeline:MeiQiPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:MeiQiPipePoint"/>
+        <Class abbreviatedIRI="pipeline:MeiQiPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:PSPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:PSPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Point"/>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Polygon"/>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:QTPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:QTPipeLine"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+            <Class abbreviatedIRI="pipeline:LineString"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:QTPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:QTPipePoint"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+            <Class abbreviatedIRI="pipeline:Point"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:QiuMoZhuTie"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:QuiteSuitable"/>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RLPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RLPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RQPipeLine"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RQPipeLine"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+            <Class abbreviatedIRI="pipeline:LineString"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RQPipePoint"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RQPipePoint"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+            <Class abbreviatedIRI="pipeline:Point"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RenFang"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:RenGongShi"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:SYZTOthers"/>
+        <Class abbreviatedIRI="pipeline:SYZT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ShangJia"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Shi"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ShiMian"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ShuiXia"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:SomeRisk"/>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Suitable"/>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:TaoCi"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipeLine"/>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipePoint"/>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Tong"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Tong"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="pipeline:ShiYongHangYe"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+                <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+                <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:TongXinLvJiaoXian"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:XiaoTongDao"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipeLine"/>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipePoint"/>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ZHPipeLine"/>
+        <Class abbreviatedIRI="pipeline:ZHPipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ZHPipePoint"/>
+        <Class abbreviatedIRI="pipeline:ZHPipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ZHPipeline"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ZhiMai"/>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ZhuTie"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:Zhuan"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="pipeline:ZhuanShi"/>
+        <Class abbreviatedIRI="pipeline:GXCZ"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe"/>
+        <Class abbreviatedIRI="pipeline:ZHPipeline"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou"/>
+        <Class abbreviatedIRI="pipeline:DiMian"/>
+        <Class abbreviatedIRI="pipeline:DingGuan"/>
+        <Class abbreviatedIRI="pipeline:GuanGou"/>
+        <Class abbreviatedIRI="pipeline:GuanKuai"/>
+        <Class abbreviatedIRI="pipeline:GuanMai"/>
+        <Class abbreviatedIRI="pipeline:JiaKong"/>
+        <Class abbreviatedIRI="pipeline:JingNeiLianXian"/>
+        <Class abbreviatedIRI="pipeline:RenFang"/>
+        <Class abbreviatedIRI="pipeline:ShangJia"/>
+        <Class abbreviatedIRI="pipeline:ShuiXia"/>
+        <Class abbreviatedIRI="pipeline:XiaoTongDao"/>
+        <Class abbreviatedIRI="pipeline:ZhiMai"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:Abandoned"/>
+        <Class abbreviatedIRI="pipeline:EmptyPipe"/>
+        <Class abbreviatedIRI="pipeline:InUse"/>
+        <Class abbreviatedIRI="pipeline:SYZTOthers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:BoLiGang"/>
+        <Class abbreviatedIRI="pipeline:Gang"/>
+        <Class abbreviatedIRI="pipeline:GuangQian"/>
+        <Class abbreviatedIRI="pipeline:JuLvYiXi"/>
+        <Class abbreviatedIRI="pipeline:JuYiXi"/>
+        <Class abbreviatedIRI="pipeline:QiuMoZhuTie"/>
+        <Class abbreviatedIRI="pipeline:RenGongShi"/>
+        <Class abbreviatedIRI="pipeline:Shi"/>
+        <Class abbreviatedIRI="pipeline:ShiMian"/>
+        <Class abbreviatedIRI="pipeline:TaoCi"/>
+        <Class abbreviatedIRI="pipeline:Tong"/>
+        <Class abbreviatedIRI="pipeline:TongXinLvJiaoXian"/>
+        <Class abbreviatedIRI="pipeline:ZhuTie"/>
+        <Class abbreviatedIRI="pipeline:Zhuan"/>
+        <Class abbreviatedIRI="pipeline:ZhuanShi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:DLPipeLine"/>
+        <Class abbreviatedIRI="pipeline:DLPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:DXPipeLine"/>
+        <Class abbreviatedIRI="pipeline:DXPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:GYPipeLine"/>
+        <Class abbreviatedIRI="pipeline:GYPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:HighlyRish"/>
+        <Class abbreviatedIRI="pipeline:HighlySuitable"/>
+        <Class abbreviatedIRI="pipeline:QuiteSuitable"/>
+        <Class abbreviatedIRI="pipeline:SomeRisk"/>
+        <Class abbreviatedIRI="pipeline:Suitable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:LineString"/>
+        <Class abbreviatedIRI="pipeline:Point"/>
+        <Class abbreviatedIRI="pipeline:Polygon"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:MSFS"/>
+        <Class abbreviatedIRI="pipeline:SYZT"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:MeiQiPipe"/>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipe"/>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipe"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:MeiQiPipeLine"/>
+        <Class abbreviatedIRI="pipeline:MeiQiPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:PSPipeLine"/>
+        <Class abbreviatedIRI="pipeline:PSPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:QTPipeLine"/>
+        <Class abbreviatedIRI="pipeline:QTPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:RLPipeLine"/>
+        <Class abbreviatedIRI="pipeline:RLPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:RQPipeLine"/>
+        <Class abbreviatedIRI="pipeline:RQPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipeLine"/>
+        <Class abbreviatedIRI="pipeline:TianRanQiPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipeLine"/>
+        <Class abbreviatedIRI="pipeline:YeHuaQiPipePoint"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="pipeline:ZHPipeLine"/>
+        <Class abbreviatedIRI="pipeline:ZHPipePoint"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="pipeline:DLMinDepth_zhimai"/>
+        <ObjectProperty abbreviatedIRI="pipeline:MinDepth"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="pipeline:DLMinDepth_zhimai"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="pipeline:ShiYongHangYe"/>
+        <Class abbreviatedIRI="pipeline:ZhuTie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="pipeline:has_FTSD_SuitableDegrade"/>
+        <Class abbreviatedIRI="pipeline:PipeFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="pipeline:DLMinDepth_zhimai"/>
+        <DataMinCardinality cardinality="7">
+            <DataProperty abbreviatedIRI="pipeline:GXMS"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="pipeline:ShiYongHangYe"/>
+        <Class IRI="http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="pipeline:hasShape"/>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="pipeline:has_FTSD_SuitableDegrade"/>
+        <Class abbreviatedIRI="pipeline:SuitableDegrade"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="pipeline:AbandonedTime"/>
+        <Class abbreviatedIRI="pipeline:Abandoned"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="pipeline:StartFrom"/>
+        <Class abbreviatedIRI="pipeline:InUse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="pipeline:asWKT"/>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="pipeline:coordinateDimension"/>
+        <Class abbreviatedIRI="pipeline:PipeGeometry"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="pipeline:AbandonedTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="pipeline:GXMS"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Balanced</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Clever</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Energetic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lazy</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Talkative</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="pipeline:StartFrom"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="pipeline:coordinateDimension"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rule1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="pipeline:TianRanQiPipeLine"/>
+                <Variable abbreviatedIRI="pipeline:p"/>
+            </ClassAtom>
+        </Body>
+        <Head/>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DLPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">电力管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#DXPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">电信管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#GYPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">工业管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#JSPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">给水管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#PSPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">排水管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#QTPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">其他管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RLPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">热力管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#RQPipe</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">燃气管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/tyt/ontologies/2016/2/Pipe#ZongHeGuanGou</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">综合管沟（廊）</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:Abandoned</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">废弃</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:AbandonedTime</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">废弃时间</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:BoLiGang</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">玻璃钢</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:DLMinDepth_zhimai</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">电力管线最小覆土深度_直埋</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:DiMian</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">地面</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:DingGuan</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">顶管（非开挖或定向钻）</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:EmptyPipe</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">空管</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:GXCZ</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">管线材质</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:Gang</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">钢</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:GuanGou</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">管沟</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:GuanKuai</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">管块</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:GuanMai</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">管埋</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:GuangQian</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">光纤</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:HighlyRish</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">高度风险</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:HighlySuitable</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">高度适宜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:InUse</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">在用</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:JiaKong</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">架空</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:JingNeiLianXian</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">井内连线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:JuLvYiXi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">聚氯乙烯</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:JuYiXi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">聚乙烯</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:MSFS</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">埋设方式</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:MinDepth</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">最小覆土深度</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:QiuMoZhuTie</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">球墨铸铁</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:QuiteSuitable</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">较适宜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:RenFang</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">人防</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:RenGongShi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">砼</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:SYZT</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">使用状态</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:SYZTOthers</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">其他</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ShangJia</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">上架</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:Shi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">石</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ShiMian</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">石棉</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ShiYongHangYe</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">适用行业</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ShuiXia</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">水下</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:SomeRisk</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">有风险</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:StartFrom</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">开始时间</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:Suitable</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">适宜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:SuitableDegrade</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">适宜度</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:TaoCi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">陶瓷</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:Tong</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">铜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:TongXinLvJiaoXian</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">铜芯铝绞线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:XiaoTongDao</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">小通道</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ZHPipeline</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">综合管线</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ZhiMai</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">直埋</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ZhuTie</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">铸铁</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:Zhuan</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">砖</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pipeline:ZhuanShi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">砖石</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

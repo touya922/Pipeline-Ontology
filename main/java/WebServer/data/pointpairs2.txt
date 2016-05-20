@@ -1,0 +1,1 @@
+{"zhPoint":{"ObjectID":"11","PointName":null,"X":null,"Y":null,"GDMS":11.0,"GXHY":"天然气","TCRQ":null,"QSDW":null},"zyPoint":{"ObjectID":null,"PointName":null,"X":null,"Y":null,"GDMS":12.0,"GXHY":"天然气"},"descriSemi":0.2,"structSemi":0.34,"hirechiSemi":0.1,"Semi":0.1}
